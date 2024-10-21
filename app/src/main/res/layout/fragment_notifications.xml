@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/eventStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginTop="16dp"
+                android:textColor="@android:color/black" />
+
+<!--             MaterialCalendarView を使用-->
+            <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mcv_showOtherDates="all" />
+
+<!--            <com.applandeo.materialcalendarview.CalendarView-->
+<!--                android:id="@+id/calendarView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent" />-->
+
+            <TextView
+                android:id="@+id/mediCheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="服薬チェックリスト"/>
+
+            <CheckBox
+                android:id="@+id/morningCh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="お薬名１"/>
+
+            <CheckBox
+                android:id="@+id/noonCh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="お薬名２"/>
+
+            <CheckBox
+                android:id="@+id/eveningCh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="お薬名３"/>
+
+            <TextView
+                android:id="@+id/mediCheck1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="50dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

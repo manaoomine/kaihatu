@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- 画面タイトルやセクションタイトル -->
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- 薬の新規登録画面の項目ラベル -->
+    <string name="medi_name">おくすり名</string>
+    <string name="medi_quantity">服用量 (1回)</string>
+    <string name="medi_number">服用回数 (1日)</string>
+    <string name="medi_time">服用期間</string>
+    <string name="medi_memo">メモ</string>
+    <string name="medi_button">登録</string>
+
+    <!-- 写真機能の文字列 -->
+    <string name="photo_function_title">薬の写真を登録</string>
+    <string name="photo_capture_button">写真を撮る</string>
+    <string name="photo_description">薬の写真</string>
+    <string name="photo_error">写真を取得できませんでした。もう一度お試しください。</string>
+
+    <!-- スピナー用の数量と回数リスト -->
+    <string-array name="sp_quantitylist">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="sp_timelist">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btPic"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 写真表示エリア -->
+
+        <!-- 写真を撮るボタン -->
+
+
+        <!-- 処方・購入日 -->
+
+        <!-- おくすり名 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/medi_name"
+            android:layout_marginTop="16dp" />
+        <EditText
+            android:id="@+id/mediNameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="例: 風邪薬" />
+
+        <!-- 服用量 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/medi_quantity"
+            android:layout_marginTop="16dp" />
+        <Spinner
+            android:id="@+id/quantitySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/sp_quantitylist" />
+
+        <!-- 服用回数 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/medi_number"
+            android:layout_marginTop="16dp" />
+        <Spinner
+            android:id="@+id/timeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/sp_timelist" />
+
+        <!-- 服用期間 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/medi_time"
+            android:layout_marginTop="16dp" />
+        <EditText
+            android:id="@+id/mediTimeEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="例: 7日間" />
+
+        <!-- メモ -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/medi_memo"
+            android:layout_marginTop="16dp" />
+        <EditText
+            android:id="@+id/mediMemoEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="服用時の注意点など" />
+
+        <!-- 登録ボタン -->
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/medi_button"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
